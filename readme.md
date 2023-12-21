@@ -1,33 +1,20 @@
 # ここにタイトルを入れる
+受講生の課題を本番環境で動くように修正したアプリ
 
 ## DEMO
 
-    デプロイ先：https://kani-nuneno.sakura.ne.jp/231220_kadai/
-    ローカル版動画：XXXXXXXXXXXXX
+    デプロイ先：https://t2y-m.sakura.ne.jp/dev26_test/
 
-## 紹介と使い方
-
-    誕生日に欲しいものをみんなにアピールできるサイト
 
 ## 工夫した点
 
-    ひと項目ずつ編集可能にしてみた。
+    本番環境に関する情報を別ファイルに切り分けて管理しているところ
     
 
 ## 苦戦した点
 
-    　[お知恵拝借したいです]デプロイしてもリンク遷移がうまくいっていない
-    ◼︎起きていること
-    デプロイしたページ（index）からデータを送信したり、ページ上部リンクからselect.phpに遷移しようとするとエラーメッセージが出る
-    DBConnectError:SQLSTATE[HY000] [2002] No such file or directory
-    ◼︎試してみたこと
-    My SQLをうまく呼び出せていないっぽかったので、localhostの場所指示方法を変えてみた。がしかしエラーメッセージ変わらず。
-    [変更前]
-    $pdo = new PDO('mysql:dbname=gs_231220kadai;charset=utf8;host=localhost', 'root', '');
-    [変更後]
-    $pdo = new PDO('mysql:dbname=gs_231220kadai;charset=utf8;host=127.0.0.1', 'root', '');
-
-
+- object内の配列情報の取り扱い
+- データの構造
 
 ## 参考にした web サイトなど
 
